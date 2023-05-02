@@ -6,6 +6,10 @@ Route.get('/', async ({ view }) => {
 
 Route.get('/home', async ({ inertia }) => {
   return inertia.render('Home', {
-    testando: 'Isto é um teste',
+    testando: 'Isto é um teste 123',
   })
+})
+
+Route.get('/login', async ({ inertia }) => {
+  return inertia.render('Auth/Login')
 })

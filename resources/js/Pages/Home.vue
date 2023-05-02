@@ -1,11 +1,18 @@
 <template>
-  <h1>Teste de InertiaJS... {{ testando }}</h1>
+  <div>
+    <Link href="/login">Login</Link>
+    <h1>Teste de InertiaJS, {{ testando }}</h1>
+  </div>
 </template>
 
 <script>
-  export default {
-    props: {
-      testando: String
-    }
+import { Link } from '@inertiajs/vue3'
+export default {
+  props: {
+    testando: String,
+  },
+  components: {
+    Link
   }
+}
 </script>
